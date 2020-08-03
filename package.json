@@ -4,11 +4,16 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run ng serve",
     "build": "ng build --prod  --base-href ./ && cp CNAME dist/CNAME",
     "test": "ng test",
     "lint": "ng lint --force",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "cypress:run": "npx cypress run",
+    "cypress:run_qa": "npx cypress run --env configFile=qa",
+    "cypress:e2e": "start-test start http-get://localhost:4200 cypress:run"
   },
   "pre-commit": [
     "lint"
@@ -38,6 +43,9 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "^9.4.0",
     "codelyzer": "^4.5.0",
+    "cypress": "^4.9.0",
+    "cypress-multi-reporters": "^1.4.0",
+    "cypress-plugin-retries": "^1.5.2",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -46,8 +54,10 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "mocha-junit-reporter": "^2.0.0",
     "pre-commit": "^1.2.2",
     "protractor": "^5.4.2",
+    "start-server-and-test": "^1.11.0",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "3.2.4"

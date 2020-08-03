@@ -1,0 +1,39 @@
+{
+    "articles": [
+        {
+            "title": "darshah",
+            "slug": "darshah-5n3fde",
+            "body": "dsadsa",
+            "createdAt": "2020-06-30T12:13:20.049Z",
+            "updatedAt": "2020-06-30T12:13:20.049Z",
+            "tagList": [],
+            "description": "dsdds",
+            "author": {
+                "username": "darshan401",
+                "bio": null,
+                "image": "",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 0
+        },
+        {
+            "title": "Test11061.111673136837",
+            "slug": "test11061-111673136837-e66qcs",
+            "body": "52678.455614063845",
+            "createdAt": "2020-06-30T11:58:30.796Z",
+            "updatedAt": "2020-06-30T11:58:30.796Z",
+            "tagList": [],
+            "description": "31458.716180181968",
+            "author": {
+                "username": "HikariTest",
+                "bio": null,
+                "image": "https://static.productionready.io/images/smiley-cyrus.jpg",
+                "following": false
+            },
+            "favorited": false,
+            "favoritesCount": 1
+        }
+    ],
+    "articlesCount": 500
+}

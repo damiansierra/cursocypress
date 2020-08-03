@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.1790" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2020-08-03T12:51:15" tests="0" file="cypress\integration\firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2020-08-03T12:51:15" tests="1" time="4.1790" failures="0">
+    <testcase name="Test with backend should gave tags  with routing object" time="4.1790" classname="should gave tags  with routing object">
+    </testcase>
+  </testsuite>
+</testsuites>

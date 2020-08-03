@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-27T12:54:18.519Z",
+    "end": "2020-07-27T12:54:23.990Z",
+    "duration": 5471,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1ca45f6-6bb9-4cfe-abfc-2cf37b2e9b1c",
+      "title": "",
+      "fullFile": "cypress\\integration\\firstTest.spec.js",
+      "file": "cypress\\integration\\firstTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "01db77fe-4432-4c8b-b8f2-0436cfc12ebe",
+          "title": "Test with backend",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should gave tags  with routing object",
+              "fullTitle": "Test with backend should gave tags  with routing object",
+              "timedOut": null,
+              "duration": 5440,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.tag-list')\n    .should('contain', 'cypress')\n    .and('contain', 'automation')\n    .and('contain', 'testing');",
+              "err": {},
+              "uuid": "a343362f-4ba6-4e62-b491-ce8eac8c21cf",
+              "parentUUID": "01db77fe-4432-4c8b-b8f2-0436cfc12ebe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a343362f-4ba6-4e62-b491-ce8eac8c21cf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5440,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
